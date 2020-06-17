@@ -1,16 +1,12 @@
 package com.greedygameimageloader
 
 import Children
-import android.database.Observable
-import android.util.Log
-import com.telstra.helper.CommonUtils
+import com.greedygameimageloader.helper.CommonUtils
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Predicate
 import io.reactivex.schedulers.Schedulers
-import java.util.*
 import javax.net.ssl.SSLHandshakeException
 import kotlin.collections.ArrayList
 
