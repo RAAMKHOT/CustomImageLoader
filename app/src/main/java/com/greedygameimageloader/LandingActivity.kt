@@ -24,7 +24,7 @@ class LandingActivity : AppCompatActivity(), LandingView {
     override fun init() {
         landingPresenter = LandingPresenter(this)
         imageAdapter = ImageAdapter(ArrayList<Children>(), this, this)
-        val mLayoutManager = androidx.recyclerview.widget.GridLayoutManager(this, 2)
+        val mLayoutManager = androidx.recyclerview.widget.LinearLayoutManager(this)
         imagesRecyclerView.layoutManager = mLayoutManager
         imagesRecyclerView.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
         imagesRecyclerView.adapter = imageAdapter
